@@ -692,9 +692,9 @@ function prepareFlow(){
     context.textAlign="center";
     context.textBaseline="middle";
 
-    //var titleLines=wrapText(context, set[i].title, x, y, maxWidth, lineHeight,true);
-    //y=lineHeight*(2.5+titleLines);
-    y=lineHeight*2;
+    var titleLines=wrapText(context, set[i].title, x, y, maxWidth, lineHeight,true);
+    y=lineHeight*(2.5+titleLines);
+    //y=lineHeight*2;
     context.font = flowItemWidth/14+'pt filoital';
     var descLines=wrapText(context, set[i].desc, x, y, maxWidth, lineHeight,false);
     }
@@ -1260,9 +1260,9 @@ function resumePrepareRotor(){
     context.textAlign="center";
     context.textBaseline="middle";
     
-    //var titleLines=wrapText(context, set[i].title, x, y, maxWidth, lineHeight,true);
-    //y=lineHeight*(2.5+titleLines);
-    y=lineHeight*2;
+    var titleLines=wrapText(context, set[i].title, x, y, maxWidth, lineHeight,true);
+    y=lineHeight*(2.5+titleLines);
+    //y=lineHeight*2;
     context.font = rotorItemWidth/14+'pt filoital';
     var descLines=wrapText(context, set[i].desc, x, y, maxWidth, lineHeight,false);
 
