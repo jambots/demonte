@@ -43,15 +43,6 @@ var includedFeed={
 		},
 		"comments": [],
 		"attachments": [{
-			"id": 5,
-			"url": "http:\/\/www.demonte.chromaris.org\/wp-content\/uploads\/2016\/03\/New-folder.zip",
-			"slug": "new-folder",
-			"title": "New folder",
-			"description": "",
-			"caption": "",
-			"parent": 4,
-			"mime_type": "application\/zip"
-		}, {
 			"id": 6,
 			"url": "http:\/\/www.demonte.chromaris.org\/wp-content\/uploads\/2016\/03\/000000000000000000011111111111111111.png",
 			"slug": "000000000000000000011111111111111111",
