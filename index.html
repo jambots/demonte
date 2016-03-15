@@ -1,0 +1,93 @@
+<html>
+<head>
+<meta http-equiv = "content-type" content = "application/xhtml+xml; charset = UTF-8" />
+<meta content = 'width = device-width, initial-scale = 1.0, maximum-scale = 1.0, user-scalable = 0' name = 'viewport' /><meta name = "viewport" content = "width = device-width, maximum-scale = 1.0, initial-scale = 1.0">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+<meta name = "apple-mobile-web-app-capable" content = "yes">
+<meta name = "title" content = "La Forêt" /><meta name = "description" content = "La Forêt chocolate" />
+<title>La Forêt</title>
+<script src="phonegap.js"></script>
+<script src="jquery.min.js"></script>
+<script>
+var web=false;
+</script>
+<!--<script src="phonegap.js?2"></script>-->
+<script type="text/javascript" src="iscroll-lite.js"></script>
+<script type="text/javascript" src="includedfeed.js"></script>
+<script type="text/javascript" src="laforet.js"></script>
+<link rel = "stylesheet" type = "text/css" href = "reset.css">
+<link rel = "stylesheet" type = "text/css" href = "laforet.css">
+<style>
+</style>
+</head>
+<body onload="init()" ongesturestart="gestureStart(event)";>
+<div style="font-family:sack; position:absolute; top:-3000px;">sack</div>
+<div style="font-family:signify; position:absolute; top:-3000;">signify</div>
+<div id="landscapeMain">
+  <div id="flow"></div>
+</div>
+<div id="portraitMain">
+  <div id="thumbsUi">
+    <div id="thumbsNavTop">
+      <canvas id="setSelectButton" ></canvas>
+      <div id="thumbsLabel"></div>
+    </div>
+    <div id="thumbsNavBottom">
+      <canvas id="mailButton" ></canvas>
+      <canvas id="linkButton" ></canvas>
+    </div>
+    <div id="thumbsHolder">
+      <div id="thumbsScroller"></div>
+    </div>
+    <canvas id="loadingCanvas" ></canvas>
+
+    <div id="setSelectDim" style="display:none;">
+      <div id="setSelectModal">
+      <div id="setSelectNavTop">
+        <canvas id="setSelectCancel"></canvas>
+        <div id="setSelectLabel">Select Season</div>
+        <canvas id="infoButton" ></canvas>
+      </div>
+        <div id="setSelectHolder">
+          <div id="setSelectScroller"></div>
+        </div>
+      </div>
+    </div>
+    <div id="infoDim">
+      <div id="infoModal">
+        <div id="infoHolder"></div>
+        <div id="infoNavTop">
+          <canvas id="infoCancel"></canvas>
+          <div id="infoLabel">About</div>
+        </div>
+        <div id="infoNavBottom">
+          <canvas id="jambotsButton"></canvas>
+          <canvas id="cacheButton"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+  <! end of thumbsUi>
+  <div id="rotorUi">
+    <div id="rotor"></div>
+    <div id="rotorNavTop" style="background-color:#0f0;">
+      <canvas id="thumbsButton" ></canvas>
+      <div id="rotorLabel">rotorLabel</div>
+    </div>
+    <div id="rotorNavBottom">
+      <canvas id="saveButton" ></canvas>
+      <canvas id="prevButton" ></canvas>
+      <canvas id="nextButton" ></canvas>
+      <canvas id="faveButton" ></canvas>
+    </div>
+  </div><! end of rotorUi>
+</div><! end of portraitMain>
+<div id="debugDiv" ontouchstart="dbug('');">
+<span class="engoth">.</span>
+<span class="filoital">.</span>
+</div>
+</body>
+</html>
