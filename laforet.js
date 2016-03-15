@@ -277,13 +277,13 @@ function setupEvents(){
     }
   }
 function mailButton(){
-  window.location='mailto:info@laforetchocolate.com';
+  window.location='mailto:nicolademente@gmail.com';
   }
 function linkButton(){
   //dbuga('linkButton');
   //window.plugins.ChildBrowser.showWebPage('http://www.laforetchocolate.com',{ showLocationBar: true });
   //navigator.app.loadUrl("http://www.laforetchocolate.com", {openExternal: true});
-  window.open("http://www.laforetchocolate.com", "_system");
+  window.open("http://www.demonte.chromaris.org", "_system");
   }
 function jambotsButton(){
   //dbuga('jambotsButton');
