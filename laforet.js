@@ -281,7 +281,6 @@ function mailButton(){
   }
 function linkButton(){
   //dbuga('linkButton');
-{ showLocationBar: true });
   window.open("http://www.demonte.chromaris.org", "_system");
   }
 function jambotsButton(){
