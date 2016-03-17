@@ -2153,7 +2153,7 @@ function loadDataWp(){
   }
 function parseDataWp(feed, included){
   entries=feed.posts;
-  //dbuga('parseDataWp  entries.length='+entries.length);
+  dbuga('parseDataWp  entries.length='+entries.length);
   for (var e=0; e<entries.length; e++){
     var entry=entries[e];
     var entryDate=entry.date.split(" ")[0];
@@ -2171,7 +2171,7 @@ function parseDataWp(feed, included){
       var desc=item.description;
       //desc=desc.replace("&amp;", "&");
       //var largeUrl= item.url;
-      var largeUrl= item.images.large.url;
+      var largeUrl= item.images.medium-large.url;
       var thumbUrl= item.images.medium.url;
       set.push({"largeUrl":largeUrl, "thumbUrl":thumbUrl, "title":title, "desc":desc});
       if(included){
