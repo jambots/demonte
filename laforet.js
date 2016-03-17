@@ -2152,7 +2152,7 @@ function loadDataWp(){
   }
 function parseDataWp(feed, included){
   entries=feed.posts;
-  dbuga('parseDataWp  entries.length='+entries.length);
+  //dbuga('parseDataWp  entries.length='+entries.length);
   for (var e=0; e<entries.length; e++){
     var entry=entries[e];
     var entryDate=entry.date.split(" ")[0];
