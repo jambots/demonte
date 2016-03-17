@@ -281,8 +281,7 @@ function mailButton(){
   }
 function linkButton(){
   //dbuga('linkButton');
-  //window.plugins.ChildBrowser.showWebPage('http://www.laforetchocolate.com',{ showLocationBar: true });
-  //navigator.app.loadUrl("http://www.laforetchocolate.com", {openExternal: true});
+{ showLocationBar: true });
   window.open("http://www.demonte.chromaris.org", "_system");
   }
 function jambotsButton(){
@@ -2171,7 +2170,8 @@ function parseDataWp(feed, included){
       //title=title.toLowerCase();
       var desc=item.description;
       //desc=desc.replace("&amp;", "&");
-      var largeUrl= item.url;
+      //var largeUrl= item.url;
+      var largeUrl= item.images.large.url;
       var thumbUrl= item.images.medium.url;
       set.push({"largeUrl":largeUrl, "thumbUrl":thumbUrl, "title":title, "desc":desc});
       if(included){
