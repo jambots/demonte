@@ -2170,7 +2170,7 @@ function parseDataWp(feed, included){
       var desc=item.description;
       //desc=desc.replace("&amp;", "&");
       //var largeUrl= item.url;
-      var largeUrl= item.images.medium-large.url;
+      var largeUrl= item.images.medium_large.url;
       var thumbUrl= item.images.medium.url;
       set.push({"largeUrl":largeUrl, "thumbUrl":thumbUrl, "title":title, "desc":desc});
       if(included){
